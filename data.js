@@ -643,21 +643,21 @@ const portfolioData = {
     ],
     artist: [
       {
-        plan: "アー写撮影（ライト）",
+        plan: "ライトプラン",
         price: "目安 ¥20,000〜",
-        description: "納品数: 5枚",
+        description: "ポートレート撮影など<br>納品数: 5枚",
         features: ["1時間程度", "基本レタッチあり"]
       },
       {
-        plan: "アー写撮影（スタンダード）",
+        plan: "スタンダードプラン",
         price: "目安 ¥35,000〜",
-        description: "納品数: 10枚",
+        description: "宣材撮影など<br>納品数: 10枚",
         features: ["2時間程度", "高品質レタッチあり"]
       },
       {
-        plan: "アー写撮影（プレミアム）",
+        plan: "プレミアムプラン",
         price: "目安 ¥50,000〜",
-        description: "納品数: 20枚",
+        description: "アー写撮影など<br>納品数: 20枚",
         features: ["3時間程度", "高品質レタッチあり"]
       }
     ],
