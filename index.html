@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photographer Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar glass">
+        <div class="logo" id="nav-name">Name</div>
+        <button id="theme-toggle" class="theme-btn">
+            <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+    </nav>
+
+    <header class="hero" id="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 id="hero-name" class="fade-in">YOUR NAME</h1>
+            <p id="hero-role" class="fade-in delay-1">Live & Portrait Photographer</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- About Section -->
+        <section class="about section-fade">
+            <h2 id="about-title">About</h2>
+            <div class="about-content">
+                <img id="profile-img" src="" alt="Profile" class="profile-img">
+                <div class="about-text-container">
+                    <p id="about-text">Text here</p>
+                    <div class="sns-links">
+                        <a href="#" id="twitter-link" target="_blank" class="sns-icon" aria-label="X (Twitter)">
+                            <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>
+                        </a>
+                        <a href="#" id="instagram-link" target="_blank" class="sns-icon" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery section-fade" id="works">
+            <div class="section-header">
+                <h2>Works</h2>
+                <a href="#pricing" class="btn outline-btn jump-btn">PLAN / 料金を見る</a>
+            </div>
+            <div class="filters" id="gallery-filters"></div>
+            <div class="grid" id="gallery-grid"></div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing section-fade" id="pricing">
+            <div class="section-header">
+                <h2>Pricing</h2>
+            </div>
+            
+            <div class="pricing-category">
+                <h3>Live Photo <span>- ライブ撮影 -</span></h3>
+                <div class="pricing-cards" id="pricing-live"></div>
+            </div>
+
+            <div class="pricing-category">
+                <h3>Artist Photo <span>- 宣材・アー写 -</span></h3>
+                <div class="pricing-cards" id="pricing-artist"></div>
+            </div>
+
+            <div class="pricing-category">
+                <h3>Monthly Partner <span>- 専属カメラマン契約 -</span></h3>
+                <div class="pricing-cards" id="pricing-monthly"></div>
+            </div>
+
+            <div class="pricing-extras">
+                <div class="options-box">
+                    <h3>Options <span>- オプション -</span></h3>
+                    <ul id="pricing-options" class="extras-list"></ul>
+                </div>
+                <div class="conditions-box">
+                    <h3>Notes <span>- その他条件 -</span></h3>
+                    <ul id="pricing-conditions" class="extras-list"></ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="contact section-fade">
+            <h2>Contact</h2>
+            <p>ご依頼・ご相談はX(Twitter)のDMにてお気軽にご連絡ください。</p>
+            <a href="#" id="contact-btn" class="btn primary-btn" target="_blank">XのDMでお問い合わせ</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> <span id="footer-name"></span> All rights reserved.</p>
+    </footer>
+
+    <!-- Lightbox for images -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="Enlarged view">
+    </div>
+
+    <!-- データを読み込む -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
